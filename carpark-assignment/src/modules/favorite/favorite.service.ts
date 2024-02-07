@@ -63,7 +63,7 @@ export class FavoriteService {
         id: userId,
       },
     });
-    if (!user) throw new UnauthorizedException(Errors.UNAUTHORIZED);
+    if (!user) throw new NotFoundException(Errors.NO_FAVORITE_FOR_USER);
 
     const [data, total] = await this.favoriteRepository.getFavoriteCarparkList(
       userId,

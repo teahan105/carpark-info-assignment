@@ -28,7 +28,7 @@ export const Errors = {
     code: getUserErrorCode('001'),
   },
   USER_EMAIL_EXISTED: {
-    message: 'User not found',
+    message: 'User is existed',
     code: getUserErrorCode('005'),
   },
   USER_PASSWORD_IS_INCORRECT: {
@@ -47,5 +47,8 @@ export const Errors = {
   },
   CARKPARK_NOT_FOUND: {
     message: 'The carpark is not found!',
+  },
+  NO_FAVORITE_FOR_USER: {
+    message: "This user doesn't have any favorite carpark yet!",
   },
 };
